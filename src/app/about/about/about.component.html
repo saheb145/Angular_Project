@@ -1,0 +1,34 @@
+<div class="text-center">
+    <h1>--------------These are the example of ngStyle ----------------</h1>
+
+    <div>
+        <button [ngStyle]="AddButtonCSSStyles()">Click Me </button>
+    </div>
+    <br>
+    <div>
+        <div *ngFor='let student of students'>
+            <span [ngStyle]="{'background-color':student.Gender === 'Male' ? 'red' : 'green'}">Name : {{student.Name}},
+                Gender: {{student.Gender}}, Branch: {{student.Branch}}</span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="text-center">
+    <h1>--------------these are the example of ngClass-----------------</h1>
+    <div>
+        <h3 [ngClass]="'one'">
+            Angular ngClass with String
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h3 [ngClass]="{'one':true, 'two':false, 'three':true}">
+            Angular ngClass with String
+        </h3>
+    </div>
+
+</div>
